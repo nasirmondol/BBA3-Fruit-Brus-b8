@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -20,12 +20,39 @@
         body {
             font-family: 'Lato', sans-serif;
         }
+
+        .inline {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .input-icons i {
+            position: absolute;
+        }
+
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 3px;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="navbar bg-base-100">
+    <!-- Navbar section -->
+    <div class="lg:px-5 lg:py-3">
+        <div class="navbar h-[120px] bg-[#F85559] rounded-[600px] lg:px-12">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -37,38 +64,38 @@
                     </label>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabindex="0">
-                        <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                <ul class="menu menu-horizontal px-1 text-[#FFF] font-medium text-xl invisible lg:visible">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
                 </ul>
             </div>
+            <div class="navbar-center hidden lg:flex">
+                <div class="text-4xl font-bold text-[#FFF] flex items-center">
+                    <div>
+                        <img class="h-[60px] w-[50px]" src="./images/logo.png" alt="">
+                    </div>
+                    <a class="ml-2" href="">daisyUI</a>
+                </div>
+            </div>
             <div class="navbar-end">
-                <a class="btn">Button</a>
+                <input class="w-[400px] h-[56px] bg-[#FFF] p-3 text-[#FFFFFF] rounded-[50px]" type="text"
+                    placeholder="search here">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="absolute w-6 h-6 mr-4">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
             </div>
         </div>
+    </div>
     </header>
     <main>
 
