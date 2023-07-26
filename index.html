@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Manrope:wght@300;400;500;600;700;800&family=Poppins&family=Roboto:wght@400;500;700&family=Victor+Mono:wght@100&family=Work+Sans:wght@400;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Manrope:wght@300;400;500;600;700;800&family=Poppins&family=Roboto:wght@400;500;700&family=Victor+Mono:wght@110&family=Work+Sans:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <style>
@@ -26,8 +26,8 @@
 <body>
     <!-- Navbar section -->
     <header>
-        <div class="lg:px-10 lg:py-3">
-            <div class="navbar h-[100px] bg-[#F85559] rounded-[600px] lg:px-12">
+        <div class="lg:px-10 lg:py-3 p-4">
+            <div class="navbar h-[110px] bg-[#F85559] rounded-[600px] lg:px-12">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-110 rounded-box w-52">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
@@ -73,7 +73,7 @@
         </div>
 
         <!-- Banner -->
-        <div class="lg:px-10 lg:py-3">
+        <div class="lg:px-10 lg:py-3 mt-5 p-4">
             <div class="carousel w-full">
 
                 <div id="slide1" class="carousel-item relative w-full">
@@ -153,30 +153,81 @@
         </div>
     </header>
     <main>
-        <!-- Bonus layout -->
+        <!-- Bonus layout fruits-->
         <section class="flex justify-center">
             <div
-                class="flex justify-center items-center bg-[#FFFFFF] drop-shadow-2xl w-[1050px] h-[180px] -mt-28 rounded-lg">
+                class="flex justify-center items-center bg-[#FFFFFF] drop-shadow-2xl w-[1050px] h-[180px] -mt-28 rounded-lg invisible lg:visible">
                 <div>
-                    <img class="p-5 w-[130px] h-[100px]" src="images/fruit1.png" alt="">
+                    <img class="p-5 w-[130px] h-[110px]" src="images/fruit1.png" alt="">
                     <figcaption class="flex items-center justify-center">Grape Fruits</figcaption>
                 </div>
 
                 <div>
-                    <img class="p-5 w-[130px] h-[100px]" src="images/fruit3.png" alt="">
+                    <img class="p-5 w-[130px] h-[110px]" src="images/fruit3.png" alt="">
                     <figcaption class="flex items-center justify-center">Mango</figcaption>
                 </div>
                 <div>
-                    <img class="p-5 w-[130px] h-[100px]" src="images/fruit4.png" alt="">
+                    <img class="p-5 w-[130px] h-[110px]" src="images/fruit4.png" alt="">
                     <figcaption class="flex items-center justify-center">Strawberry</figcaption>
                 </div>
                 <div>
-                    <img class="p-5 w-[130px] h-[100px]" src="images/fruit5.png" alt="">
+                    <img class="p-5 w-[130px] h-[110px]" src="images/fruit5.png" alt="">
                     <figcaption class="flex items-center justify-center">Pomegranate</figcaption>
                 </div>
                 <div>
-                    <img class="p-5 w-[130px] h-[100px]" src="images/fruit8.png" alt="">
+                    <img class="p-5 w-[130px] h-[110px]" src="images/fruit8.png" alt="">
                     <figcaption class="flex items-center justify-center">Orange</figcaption>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deal of the day -->
+        <section class="lg:px-10 lg:py-28 p-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex-1 ">
+                    <h2 class="text-3xl text-center lg:text-left font-extrabold text-[#121212] mb-4">Deal of the day</h2>
+                    <p class="text-[#121212] font-medium lg:text-left text-center lg:w-[615px] mb-5">Contrary to popular belief, is not simply random
+                        text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex-1 flex justify-end">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-[#121212]">29</h2>
+                        <p>Days</p>
+                    </div>
+                    <div class="px-4 mt-2">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-[#121212]">15</h2>
+                        <p>Hours</p>
+                    </div>
+                    <div class="px-4 mt-2">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-[#121212]">25</h2>
+                        <p>Minute</p>
+                    </div>
+                    <div class="px-4 mt-2">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-[#121212]">08</h2>
+                        <p>Seconds</p>
+                    </div>
                 </div>
             </div>
         </section>
